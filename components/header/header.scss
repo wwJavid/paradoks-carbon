@@ -1,0 +1,12 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 16px;
+  color: $light;
+
+  &__logo {
+    color: $dark;
+  }
+}
