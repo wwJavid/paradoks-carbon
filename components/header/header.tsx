@@ -1,25 +1,28 @@
 import Image from "next/image";
+import styles from "./header.module.scss";
 
 function Header() {
   return (
     <>
-      <div>
-        <div className="header--logo">
+      <header className={styles.header}>
+        <nav className={styles.header_logo}>
           <Image
             priority
             src="/assets/paradoks.svg"
-            fill={true}
             alt="Paradoks"
+            width={40}
+            height={40}
           />
 
           <Image
             priority
             src="/assets/pd-logo.svg"
-            fill={true}
             alt="Paradoks Logo"
+            width={40}
+            height={40}
           />
-        </div>
-      </div>
+        </nav>
+      </header>
     </>
   );
 }

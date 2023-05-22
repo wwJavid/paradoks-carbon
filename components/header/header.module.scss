@@ -1,0 +1,18 @@
+@import "../../styles/variables";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 0px;
+  gap: 16px;
+  color: $light;
+  width: 23px;
+  height: 48px;
+
+  &_logo {
+    position: relative;
+    width: 23px;
+    height: 48px;
+  }
+}
