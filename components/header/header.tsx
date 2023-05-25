@@ -3,10 +3,8 @@ import Brand from "../brand/brand";
 
 export default function Header() {
   return (
-    <>
-      <header className={styles.header}>
-        <Brand />
-      </header>
-    </>
+    <header className={styles.header}>
+      <Brand />
+    </header>
   );
 }
