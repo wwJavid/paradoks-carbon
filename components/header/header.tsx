@@ -1,30 +1,12 @@
-import Image from "next/image";
 import styles from "./header.module.scss";
+import Brand from "../brand/brand";
 
-function Header() {
+export default function Header() {
   return (
     <>
       <header className={styles.header}>
-        <nav className={styles.header_logo}>
-          <Image
-            priority
-            src="/assets/paradoks.svg"
-            alt="Paradoks"
-            width={40}
-            height={40}
-          />
-
-          <Image
-            priority
-            src="/assets/pd-logo.svg"
-            alt="Paradoks Logo"
-            width={40}
-            height={40}
-          />
-        </nav>
+        <Brand />
       </header>
     </>
   );
 }
-
-export default Header;
