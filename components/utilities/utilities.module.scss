@@ -1,0 +1,17 @@
+@import "../../styles/variables";
+
+.utilities {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0px;
+  gap: 16px;
+
+  &_button {
+    color: $light;
+    background-color: $purple;
+    border-radius: 5px;
+    padding: 12px 14px;
+  }
+}
