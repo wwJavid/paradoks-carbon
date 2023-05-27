@@ -3,7 +3,6 @@
 .nav {
   display: flex;
   align-items: center;
-  background-color: aquamarine;
 
   &_ul {
     display: flex;
@@ -11,7 +10,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0px;
-    gap: 62px;
+    gap: 32px;
     font-family: "Helvetica";
     font-style: normal;
     font-weight: 400;

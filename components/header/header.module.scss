@@ -2,6 +2,6 @@
 
 .header {
   display: flex;
-  flex-direction: row;
-  gap: 185px;
+  width: 100%;
+  justify-content: space-between;
 }
