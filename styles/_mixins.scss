@@ -1,0 +1,25 @@
+//media-querries
+
+@mixin small {
+  @media screen and (max-width: 320px) {
+    @content;
+  }
+}
+
+@mixin medium {
+  @media screen and (min-width: 321px) and (max-width: 672px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media screen and (min-width: 673) and (max-width: 1120px) {
+    @content;
+  }
+}
+
+@mixin x-large {
+  @media screen and (min-width: 1121px) {
+    @content;
+  }
+}

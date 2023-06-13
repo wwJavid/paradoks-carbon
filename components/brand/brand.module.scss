@@ -1,8 +1,20 @@
 @import "../../styles/variables";
+@import "../../styles/mixins";
 
 .brand {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 30px;
+}
+
+.brand > *:last-child {
+  display: block;
+  background-color: aqua;
+}
+
+@include medium {
+  .brand > *:last-child {
+    display: none;
+  }
 }
