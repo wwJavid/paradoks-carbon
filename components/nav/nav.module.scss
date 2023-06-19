@@ -5,6 +5,14 @@
   display: flex;
   align-items: center;
 
+  @include small {
+    display: none;
+  }
+
+  @include medium {
+    display: none;
+  }
+
   &_ul {
     display: flex;
     flex-direction: row;
@@ -20,31 +28,14 @@
   }
 }
 
-@include small {
-  .menu {
-    display: inline-block;
-  }
-}
-@include medium {
-  .nav {
-    display: none;
-  }
-  .menu {
-    display: inline-block;
-  }
-}
+.menu {
+  display: none;
 
-@include large {
-  .nav {
+  @include small {
     display: inline-block;
   }
-  .menu {
-    display: none;
-  }
-}
 
-@include x-large {
-  .menu {
-    display: none;
+  @include medium {
+    display: inline-block;
   }
 }
