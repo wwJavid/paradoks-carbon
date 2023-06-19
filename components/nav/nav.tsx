@@ -35,6 +35,18 @@ function Nav() {
 
       {open && (
         <div className={styles.menu_items}>
+          <div className={styles.apply}>
+            <button>Apply</button>
+            <button>
+              <Image
+                src="/assets/cancel.svg"
+                alt="cancel"
+                width={24}
+                height={24}
+              />
+            </button>
+          </div>
+
           <ul>
             <li>
               <Link href="/home">ana səhifə</Link>
