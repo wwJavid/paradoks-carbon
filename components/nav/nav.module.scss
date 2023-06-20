@@ -41,12 +41,22 @@
 }
 
 .menu_items {
-  display: flex;
+  @include small {
+    display: flex;
+  }
+  @include medium {
+    display: flex;
+  }
+
+  display: none;
   flex-direction: column;
   align-items: center;
   gap: 10px;
   background-color: #f4f4f4;
   padding: 10px;
+  position: absolute;
+  z-index: 1;
+  right: 0;
 }
 
 .menu_items button:nth-child(1) {

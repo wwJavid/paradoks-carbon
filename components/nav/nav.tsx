@@ -15,7 +15,7 @@ function Nav() {
       <nav className={styles.nav}>
         <ul className={styles.nav_ul}>
           <li>
-            <Link href="/home">ana səhifə</Link>
+            <Link href="/">ana səhifə</Link>
           </li>
           <li>
             <Link href="/articles">məqalələr</Link>
@@ -39,6 +39,7 @@ function Nav() {
             <button>Apply</button>
             <button>
               <Image
+                onClick={handleClick}
                 src="/assets/cancel.svg"
                 alt="cancel"
                 width={24}
