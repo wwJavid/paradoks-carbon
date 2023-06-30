@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 
-function Nav() {
+function Nav() {      
   const [open, setOpen] = useState(false);
 
   function handleClick() {

@@ -9,6 +9,40 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <Header />
+      <div className={styles.body}>
+        <h1>Dünyaya fərqli perspektivdən baxan bir platforma</h1>
+        <p>Birlikdə oxuyub, birlikdə araşdırıb, birlikdə öyrənmək üçün</p>
+
+        <div className={styles.button}>
+          <button>Kəşv et</button>
+          <button>
+            Bizə qoşul
+            <Image
+              src="/assets/right-arrow.svg"
+              alt="arrow"
+              width={20}
+              height={20}
+            />
+          </button>
+        </div>
+        <div className={styles.info}>
+          <p>
+            Paradoks: Dünyanı anlamaq üçün orijinal sənədli filmlər, məqsədli
+            araşdırmalar və görüntülü hekayələr yaradan bir platformadır
+          </p>
+          <p>
+            Haqqımızda
+            <button>
+              <Image
+                src="/assets/arrow-up-right.svg"
+                alt="arrow-up"
+                width={24}
+                height={24}
+              />
+            </button>
+          </p>
+        </div>
+      </div>
     </main>
   );
 }
