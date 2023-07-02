@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.scss";
 import Header from "@/components/header/header";
+import ViewCount from "@/components/viewcount/viewcount";
 
 export default function Home() {
   return (
@@ -45,6 +46,12 @@ export default function Home() {
               />
             </p>
           </div>
+        </div>
+        <div className={styles.view}>
+          <ViewCount value={100} label="Patreon" />
+          <ViewCount value={3000} label="Instagram" />
+          <ViewCount value={5000} label="YouTube" />
+          <ViewCount value={5000} label="TikTok" />
         </div>
       </div>
     </main>

@@ -76,6 +76,7 @@
   gap: 24px;
   padding: 40px 40px 96px 40px;
 }
+
 .info p {
   color: #161616;
   font-size: 40px;
@@ -88,11 +89,18 @@
 
 .info p:last-child {
   color: #161616;
-  font-size: 20px;
+  font-size: 40px;
   font-family: Futura;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 32px;
   letter-spacing: -0.34px;
   background: none;
+}
+
+.view {
+  display: flex;
+  flex-direction: row;
+  gap: 90px;
+  padding-top: 64px;
 }
