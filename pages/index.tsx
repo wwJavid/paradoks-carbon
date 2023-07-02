@@ -10,11 +10,13 @@ export default function Home() {
     <main className={styles.main}>
       <Header />
       <div className={styles.body}>
-        <h1>Dünyaya fərqli perspektivdən baxan bir platforma</h1>
-        <p>Birlikdə oxuyub, birlikdə araşdırıb, birlikdə öyrənmək üçün</p>
+        <div className={styles.intro}>
+          <h1>Dünyaya fərqli perspektivdən baxan bir platforma</h1>
+          <p>Birlikdə oxuyub, birlikdə araşdırıb, birlikdə öyrənmək üçün</p>
+        </div>
 
         <div className={styles.button}>
-          <button>Kəşv et</button>
+          <button>Kəşf et</button>
           <button>
             Bizə qoşul
             <Image
@@ -25,22 +27,24 @@ export default function Home() {
             />
           </button>
         </div>
+
         <div className={styles.info}>
           <p>
             Paradoks: Dünyanı anlamaq üçün orijinal sənədli filmlər, məqsədli
             araşdırmalar və görüntülü hekayələr yaradan bir platformadır
           </p>
-          <p>
-            Haqqımızda
-            <button>
+
+          <div>
+            <p>
+              Haqqımızda
               <Image
                 src="/assets/arrow-up-right.svg"
                 alt="arrow-up"
                 width={24}
                 height={24}
               />
-            </button>
-          </p>
+            </p>
+          </div>
         </div>
       </div>
     </main>
